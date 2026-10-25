@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Blouses personnalisées pour étudiants et particuliers. Commande simple par WhatsApp.">
+  <title>Modeste PRINTLAB | Blouses personnalisées</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script src="js/config.js" defer></script>
+  <script src="js/script.js" defer></script>
+  <script src="js/avis.js" defer></script>
+</head>
+<body>
+  <div class="promo-strip" aria-label="Message promotionnel">
+    <div class="promo-track">
+      <span>✨ Blouses personnalisées</span><span>•</span><span>Livraison sur les campus</span><span>•</span>
+      <span>✨ Blouses personnalisées</span><span>•</span><span>Livraison sur les campus</span><span>•</span>
+      <span>✨ Blouses personnalisées</span><span>•</span><span>Livraison sur les campus</span><span>•</span>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#accueil" aria-label="Modeste PRINTLAB, accueil">
+      <span class="brand-mark">MP</span>
+      <span><strong>Modeste PRINTLAB</strong><small>où vos idées prennent forme</small></span>
+    </a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="main-nav">
+      <a href="#modeles">Nos blouses</a>
+      <a href="#commander">Commander</a>
+      <a href="#avis">Avis clients</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="accueil">
+      <div class="hero-copy">
+        <p class="eyebrow">POUR LES ÉTUDIANTS ET LES PARTICULIERS</p>
+        <h1>Ta blouse. Ton nom. <span>Ton identité.</span></h1>
+        <p class="hero-text">Des blouses personnalisées, pensées pour t'accompagner sur le campus. Choisis ta matière, ajoute ton nom et passe ta commande directement sur WhatsApp.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#commander">Commander ma blouse</a>
+          <a class="button button-light" href="#modeles">Voir les modèles</a>
+        </div>
+        <div class="hero-points">
+          <span>✓ Personnalisation</span><span>✓ Commande WhatsApp</span><span>✓ Livraison sur campus</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="photo-frame">
+          <img src="assets/images/blouse-polyester.jpg" alt="Exemple de blouse personnalisée" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+          <div class="image-placeholder"><span>PHOTO DE TA BLOUSE</span><small>Remplace cette image dans assets/images/</small></div>
+          <div class="photo-tag"><strong>Personnalisée pour toi</strong><small>Ton nom, ton style</small></div>
+        </div>
+        <div class="floating-note"><span class="note-star">✦</span><span><strong>Dès 3 999 FCFA</strong><small>Deux matières au choix</small></span></div>
+      </div>
+    </section>
+
+    <section class="trust-row" aria-label="Avantages">
+      <div><span class="trust-icon">✦</span><strong>Personnalisation</strong><small>Nom et promotion au choix</small></div>
+      <div><span class="trust-icon">⌖</span><strong>Livraison campus</strong><small>Point de rencontre confirmé</small></div>
+      <div><span class="trust-icon">♡</span><strong>Commande facile</strong><small>Sans créer de compte</small></div>
+    </section>
+
+    <section class="section" id="modeles">
+      <div class="section-heading">
+        <p class="eyebrow">NOS MODÈLES</p>
+        <h2>Choisis ta matière</h2>
+        <p>Des prix simples et transparents. Ajoute tes propres photos pour montrer les modèles réellement disponibles.</p>
+      </div>
+      <div class="product-grid">
+        <article class="product-card">
+          <div class="product-photo">
+            <img src="assets/images/blouse-polyester.jpg" alt="Blouse en polyester" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+            <div class="image-placeholder"><span>PHOTO POLYESTER</span><small>assets/images/blouse-polyester.jpg</small></div>
+            <span class="product-label">Prix accessible</span>
+          </div>
+          <div class="product-info">
+            <div class="product-title-line"><h3>Blouse polyester</h3><strong>3 999 <small>FCFA</small></strong></div>
+            <p>Une option pratique pour ta blouse personnalisée.</p>
+            <button class="button button-outline choose-material" data-material="Polyester">Choisir le polyester</button>
+          </div>
+        </article>
+        <article class="product-card">
+          <div class="product-photo">
+            <img src="assets/images/blouse-coton.jpg" alt="Blouse en coton" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+            <div class="image-placeholder"><span>PHOTO COTON</span><small>assets/images/blouse-coton.jpg</small></div>
+            <span class="product-label product-label-dark">Confort</span>
+          </div>
+          <div class="product-info">
+            <div class="product-title-line"><h3>Blouse coton</h3><strong>4 999 <small>FCFA</small></strong></div>
+            <p>Une autre matière pour choisir selon tes préférences.</p>
+            <button class="button button-outline choose-material" data-material="Coton">Choisir le coton</button>
+          </div>
+        </article>
+      </div>
+      <div class="flyer-box">
+        <div><p class="eyebrow">À DÉCOUVRIR</p><h3>Retrouve aussi notre flyer</h3><p>Ajoute ici ton visuel publicitaire officiel.</p></div>
+        <a class="button button-light" href="assets/images/flyer.jpg" target="_blank" rel="noopener">Voir le flyer</a>
+      </div>
+    </section>
+
+    <section class="order-section" id="commander">
+      <div class="section order-layout">
+        <div class="order-intro">
+          <p class="eyebrow">TA COMMANDE EN QUELQUES ÉTAPES</p>
+          <h2>On personnalise ta blouse ?</h2>
+          <p>Complète les informations ci-contre. WhatsApp s'ouvrira avec ton message prêt à envoyer. Tu pourras le vérifier avant de l'envoyer.</p>
+          <div class="order-tip"><span>01</span><p><strong>Tu complètes</strong><br>Choisis ta matière, ta taille et ton école.</p></div>
+          <div class="order-tip"><span>02</span><p><strong>Tu confirmes sur WhatsApp</strong><br>Le point de livraison et le paiement seront convenus avec nous.</p></div>
+        </div>
+        <form class="order-form" id="order-form">
+          <h3>Informations de commande</h3>
+          <label for="customer-name">Ton nom (pour la commande)</label>
+          <input id="customer-name" name="customerName" maxlength="60" required placeholder="Ex. Modeste">
+
+          <label for="blouse-name">Nom à floquer sur la blouse</label>
+          <input id="blouse-name" name="blouseName" maxlength="24" required placeholder="Ex. WANDJI M." aria-describedby="name-help">
+          <small id="name-help" class="field-help">Maximum 24 caractères pour éviter un texte trop long.</small>
+
+          <div class="form-two">
+            <div><label for="school">École / établissement</label>
+              <select id="school" name="school" required>
+                <option value="">Choisir une école</option>
+                <option>ENSPY</option><option>FMSB</option><option>ENS</option>
+                <option>ENSTP</option><option>FASA</option><option>Autre école</option><option>Particulier</option>
+              </select>
+            </div>
+            <div><label for="size">Taille</label>
+              <select id="size" name="size" required>
+                <option value="">Choisir</option><option>S</option><option>M</option><option>L</option><option>XL</option><option>XXL</option><option>À confirmer</option>
+              </select>
+            </div>
+          </div>
+
+          <label for="material">Matière</label>
+          <select id="material" name="material" required>
+            <option value="">Choisir une matière</option>
+            <option value="Polyester">Polyester — 3 999 FCFA</option>
+            <option value="Coton">Coton — 4 999 FCFA</option>
+          </select>
+          <p class="price-preview" id="price-preview">Le prix s'affichera ici.</p>
+
+          <fieldset>
+            <legend>Ajouter le texte de promotion ? (facultatif)</legend>
+            <div class="radio-line">
+              <label><input type="radio" name="addPromo" value="Non" checked> Non</label>
+              <label><input type="radio" name="addPromo" value="Oui"> Oui</label>
+            </div>
+            <div id="promo-text-wrap" hidden>
+              <label for="promo-text">Texte de promotion à floquer</label>
+              <input id="promo-text" name="promoText" maxlength="32" placeholder="Ex. PROMO 2031">
+              <small class="field-help">Écris le texte exactement comme tu veux le voir sur la blouse.</small>
+            </div>
+          </fieldset>
+
+          <button class="button button-primary button-full" type="submit">Continuer sur WhatsApp <span aria-hidden="true">↗</span></button>
+          <p class="form-note">Aucun paiement n'est effectué sur ce site. La commande est envoyée uniquement après ta confirmation sur WhatsApp.</p>
+          <p class="form-error" id="order-error" role="alert"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section reviews-section" id="avis">
+      <div class="section-heading">
+        <p class="eyebrow">ILS NOUS ONT FAIT CONFIANCE</p>
+        <h2>Les avis des clients</h2>
+        <p>Les avis soumis seront publiés après validation. N'écris pas d'informations personnelles sensibles dans ton commentaire.</p>
+      </div>
+      <div class="reviews-summary" id="reviews-summary"><strong>Les avis arrivent bientôt.</strong><span>Ton retour aidera les prochains clients.</span></div>
+      <div class="review-list" id="review-list" aria-live="polite">
+        <p class="empty-reviews">Les avis validés apparaîtront ici.</p>
+      </div>
+      <div class="review-form-wrap">
+        <form id="review-form" class="review-form">
+          <h3>Tu as déjà acheté une blouse ?</h3>
+          <p>Laisse ton avis. Il sera examiné avant publication.</p>
+          <label for="review-name">Prénom ou pseudonyme</label>
+          <input id="review-name" name="reviewName" maxlength="40" required placeholder="Ex. Modeste">
+          <label for="review-school">École (facultatif)</label>
+          <input id="review-school" name="reviewSchool" maxlength="60" placeholder="Ex. ENSPY">
+          <label for="review-rating">Ta note</label>
+          <select id="review-rating" name="rating" required>
+            <option value="5">★★★★★ — Excellent</option><option value="4">★★★★☆ — Très bien</option>
+            <option value="3">★★★☆☆ — Bien</option><option value="2">★★☆☆☆ — Moyen</option><option value="1">★☆☆☆☆ — À améliorer</option>
+          </select>
+          <label for="review-comment">Ton commentaire</label>
+          <textarea id="review-comment" name="comment" rows="4" maxlength="600" required placeholder="Raconte brièvement ton expérience..."></textarea>
+          <button class="button button-primary button-full" type="submit">Envoyer mon avis</button>
+          <p id="review-message" class="form-note" role="status">La publication n'est pas immédiate : chaque avis doit être validé.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="flyer-section section" id="flyer">
+      <div class="flyer-preview">
+        <img src="assets/images/flyer.jpg" alt="Flyer Modeste PRINTLAB" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+        <div class="image-placeholder"><span>TON FLYER ICI</span><small>Remplace assets/images/flyer.jpg par ton visuel.</small></div>
+      </div>
+      <div class="flyer-copy">
+        <p class="eyebrow">MODÈLES, PERSONNALISATION, CAMPUS</p>
+        <h2>Une blouse qui te ressemble.</h2>
+        <p>Tu as une question sur une taille, la matière ou la livraison ? Écris-nous sur WhatsApp pour confirmer les détails avant de commander.</p>
+        <a class="button button-primary" id="contact-whatsapp" href="#" target="_blank" rel="noopener">Nous contacter sur WhatsApp</a>
+      </div>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="footer-main">
+      <div class="brand brand-footer"><span class="brand-mark">MP</span><span><strong>Modeste PRINTLAB</strong><small>où vos idées prennent forme</small></span></div>
+      <p>Blouses personnalisées pour étudiants et particuliers.</p>
+      <a id="footer-whatsapp" href="#" target="_blank" rel="noopener">Discuter sur WhatsApp ↗</a>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> Modeste PRINTLAB</span><span>Fait avec soin au Cameroun.</span></div>
+  </footer>
+</body>
+</html>

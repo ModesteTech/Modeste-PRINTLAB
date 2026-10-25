@@ -1,0 +1,9 @@
+# Fichiers système et éditeur
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Ne jamais déposer de secrets personnels dans le dépôt.
+.env
+.env.*
